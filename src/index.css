@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;850&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-plus: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  
+  /* Artistic Flair Theme Palette */
+  --color-gold: #d4af37;
+  --color-carbon-space: #050505;
+  --color-[#111]: #111111;
+}
+
+/* Custom Minecraft themed backgrounds & pixelated utility classes */
+.mc-pattern-stone {
+  background-color: #050505;
+  background-image: linear-gradient(45deg, #101010 25%, transparent 25%, transparent 75%, #101010 75%, #101010), 
+                    linear-gradient(45deg, #101010 25%, transparent 25%, transparent 75%, #101010 75%, #101010);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.mc-gold-shadow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+}
+
+.mc-glow-diamond {
+  box-shadow: 0 0 25px rgba(52, 211, 153, 0.2);
+}
+
+.mc-glow-vip {
+  box-shadow: 0 0 25px rgba(96, 165, 250, 0.2);
+}
+
+.mc-slate-glow {
+  box-shadow: 0 0 25px rgba(251, 146, 60, 0.15);
+}
+
+/* Custom frame borders */
+.artistic-frame {
+  border: 12px solid #1a1a1a;
+}
+
+/* Scrollbars shaped like item bars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+@keyframes rgb-flow {
+  0% { color: #ff3333; text-shadow: 0 0 8px rgba(255, 51, 51, 0.3); }
+  17% { color: #ffaa33; text-shadow: 0 0 8px rgba(255, 170, 51, 0.3); }
+  33% { color: #ffff33; text-shadow: 0 0 8px rgba(255, 255, 51, 0.3); }
+  50% { color: #33ff33; text-shadow: 0 0 8px rgba(51, 255, 51, 0.3); }
+  67% { color: #33ffff; text-shadow: 0 0 8px rgba(51, 255, 255, 0.3); }
+  83% { color: #3333ff; text-shadow: 0 0 8px rgba(51, 51, 255, 0.3); }
+  100% { color: #ff33ff; text-shadow: 0 0 8px rgba(255, 51, 255, 0.3); }
+}
+
+.rgb-text {
+  animation: rgb-flow 8s linear infinite;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+

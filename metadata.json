@@ -1,0 +1,6 @@
+{
+  "name": "Empire SMP Store",
+  "description": "The official store and rank shop for Empire SMP. Purchase legendary ranks including GOD, VIP, GRINDER, and EXPLORER, and easily open support tickets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
